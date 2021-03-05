@@ -1,10 +1,10 @@
 exports.config = {
   output: './output',
-  timeout: 50000,
+  timeout: 500000,
   helpers: {
     Playwright: {
-      url: 'http://localhost',
-      show: true,
+      //url: 'http://localhost',
+      //show: true,
       browser: 'chromium',
       chromium: { args: ["--headless", "--no-sandbox", "--disable-gpu"] } 
     },
