@@ -4,9 +4,9 @@ exports.config = {
   helpers: {
     Playwright: {
       url: 'http://localhost',
-      show: false,
+      show: true,
       browser: 'chromium',
-      chromium: { headless: false, args: [`--no-sandbox`, `--headless`] } 
+      chromium: { headless: true, args: [`--no-sandbox`, `--headless`] } 
     },
     CredentialHelper: {
       require: './test/helpers/credential_helper'
