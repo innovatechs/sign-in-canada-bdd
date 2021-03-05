@@ -6,6 +6,7 @@ exports.config = {
       url: 'http://localhost',
       show: false,
       browser: 'chromium',
+      chromium: { headless: false, args: [`--no-sandbox`, `--headless`] } 
     },
     CredentialHelper: {
       require: './test/helpers/credential_helper'
