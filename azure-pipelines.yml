@@ -19,9 +19,6 @@ steps:
   displayName: 'npm install'
 
 - script: |
-    npm run sim-dev3 &
-  displayName: 'sim dev3'
+    npm run test -- --grep "(?=.*@CBS)(?=.*@no-sso)" &
+  displayName: 'first test'
 
-- script: |
-    CSP_HOST=_local npm run ci
-  displayName: 'Run tests'
