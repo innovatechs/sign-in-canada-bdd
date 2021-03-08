@@ -2,7 +2,7 @@
 
 const locators = {
   // pages
-  'Relying Party simulator': 'https://rp1.tbstest.catslab.ca/RPSimulator/',
+  'Relying Party simulator': 'https://www.google.com',
   'Relying Party 2 simulator': 'https://rp2.tbstest.catslab.ca/RPSimulator/',
   PowerApps: 'https://catslab.powerappsportals.com/',
   'RP simulator English chooser': 'https://rp1.tbstest.catslab.ca/RPSimulator/choose-eng.jsp',
