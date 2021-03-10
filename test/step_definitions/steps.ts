@@ -54,8 +54,6 @@ Then(/^I pause for (.*?)s/, (seconds) => {
 
 When(/^I have a saved (username|password) <(.*?)>/, async (type, what) => {
   const { envName, val } = await I.getEnv(what);
-    console.log("envName :" + envName);
-    console.log("val :" + envName);
 
   if (val === undefined) {
     assert.fail(`no such saved ${what} ${envName}`);
@@ -72,6 +70,7 @@ When(/^I have a valid random GCKey password <(.*?)>/, (name) => {
 
 When(/^I set the inputfield "(.*?)" to <(.*?)>/, async (field, name) => {
   await I.click(SIC.locate(field));
+  console.log("Set " + name + " field with val: " +  await I.getReference(name));
   await I.type(await I.getReference(name));
 });
 
