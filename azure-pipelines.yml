@@ -19,6 +19,6 @@ steps:
   displayName: 'npm install'
 
 - script: |
-    npm run test -- --grep "(?=.*@CBS)(?=.*@no-sso)" &
+    CSP_HOST=_local npm run ci -- --grep @noauth
   displayName: 'first test'
 
