@@ -16,7 +16,7 @@ const locators = {
   GCKey: 'GCKey-TE',
   CBS: 'CBS-UAT',
   SIC: process.env.CSP_HOST || 'Sign In Canada - QA',
-  Continue: '//*[@id="continue"]',
+  'Continue': '//*[@id="continue"]',
   CBSTest1: '//*[@id="SK_TEST1"]',
   'Sign up with GCKey': '//*[@id="loginForm:loginButton3"]',
   'Sign Up': {
