@@ -54,6 +54,8 @@ Then(/^I pause for (.*?)s/, (seconds) => {
 
 When(/^I have a saved (username|password) <(.*?)>/, async (type, what) => {
   const { envName, val } = await I.getEnv(what);
+    console.log("envName :" + envName);
+    console.log("val :" + envName);
 
   if (val === undefined) {
     assert.fail(`no such saved ${what} ${envName}`);
