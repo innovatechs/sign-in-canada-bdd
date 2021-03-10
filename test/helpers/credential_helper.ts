@@ -16,11 +16,14 @@ class CredentialHelper extends Helper {
 
   getReference(name) {
     const val = this.references[name];
+    console.log("get Ref name: " + name);
+    console.log("get Ref val: " + val);
     return val;
   }
 
   getEnv(name) {
     const envName = name.toString().toUpperCase().replace(/ /g,"_");
+    console.log("get Env name: " + name);
     console.log("Mustapha GCKEY USER: " + process.env.GCKEY_USER);
     const val = process.env[envName];
     this.references[name] = val;
