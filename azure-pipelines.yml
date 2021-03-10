@@ -26,5 +26,5 @@ steps:
     npm run test -- --grep @powerapps
   displayName: 'first test'
   env:
-   GCKEY_USER: $(GCKEY_USER)
-   GCKEY_PASSWORD: $(GCKEY_PASSWORD)
+   gckey user: $(GCKEY_USER)
+   gckey password: $(GCKEY_PASSWORD)
