@@ -14,7 +14,7 @@ class CredentialHelper extends Helper {
     return this.references[ref];
   }
 
-  getReference(name) {
+  async getReference(name) {
     const val = this.references[name];
     console.log("get Ref name: " + name);
     console.log("get Ref val: " + val);
