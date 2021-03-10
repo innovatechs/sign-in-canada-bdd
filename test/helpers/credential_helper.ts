@@ -21,7 +21,7 @@ class CredentialHelper extends Helper {
 
   getEnv(name) {
     const envName = name.toString().toUpperCase().replace(/ /g,"_");
-    console.log(process.env.GCKEY_USER)
+    console.log("Mustapha GCKEY USER: " + process.env.GCKEY_USER);
     const val = process.env[envName];
     this.references[name] = val;
     return {val, what: envName};
