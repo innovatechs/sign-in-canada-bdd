@@ -23,5 +23,5 @@ steps:
 #  displayName: 'sim dev3'
 
 - script: |
-    npm run test -- --grep @noauth
+    npm run test -- --grep @powerapps
   displayName: 'Run tests'
