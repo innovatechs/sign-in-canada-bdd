@@ -23,5 +23,5 @@ steps:
 #  displayName: 'sim dev3'
 
 - script: |
-    CSP_HOST=_local npm run ci -- --grep @noauth
+    CSP_HOST=_local npm run ci -- --grep "(?=.*@CBS)(?=.*@no-sso)" 
   displayName: 'Run tests'
