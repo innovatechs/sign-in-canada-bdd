@@ -13,6 +13,7 @@ When(/I click on the (link|checkbox|button) "(.*?)"/, (type, cb) => {
 
 Then(/^I should be on the (.*?) page$/, (page) => {
   I.seeInCurrentUrl(SIC.locate(page));
+  console.log("We are in the following page:" + SIC.locate(page));
 });
 
 When(/^I choose the (.*?) CSP$/, (csp) => {
