@@ -23,7 +23,7 @@ steps:
 #  displayName: 'sim dev3'
 
 - script: |
-    npm run test -- --grep @powerapps
+    npm run test -- --grep "(?=.*@saml)(?=.*@logout)"
   displayName: 'first test'
   env:
    GCKEY_USER: $(GCKEY_USER)
